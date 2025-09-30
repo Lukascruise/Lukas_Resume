@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Projects - Hanyul{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h2 class="text-center mb-5">All Projects</h2>
+  <div class="row">
+    {% for project in projects %}
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow-sm">
+        <img src="{{ project.image }}" class="card-img-top" alt="{{ project.title }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ project.title }}</h5>
+          <p class="card-text text-muted">{{ project.desc }}</p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
