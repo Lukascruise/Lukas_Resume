@@ -1,12 +1,20 @@
 [
   {
     "title": "Sussyoo",
-    "desc": "웹페이지 백엔드 개발 / 로그인 파트 담당",
-    "image": "/static/images/project1.png"
+    "desc": "웹 서비스 백엔드 개발 · 로그인 기능 구현 담당",
+    "image": "/static/images/project1.png",
+    "main": true
   },
   {
     "title": "Focuz",
-    "desc": "앱 백엔드 개발 / 수면 인지 테스트 파트 담당",
-    "image": "static/images/project2.png"
+    "desc": "모바일 앱 백엔드 개발 · 수면 인지 테스트 모듈 담당",
+    "image": "static/images/project2.png",
+    "main": true
+  },
+  {
+    "title": "CJcus",
+    "desc": "윈도우 프로그램 개발 · 메일 전송 및 거래명세서 기능 전담",
+    "image": "static/images/project3.jpg",
+    "main": true
   }
 ]
