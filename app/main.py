@@ -24,3 +24,8 @@ async def projects_page(request: Request):
         projects = json.load(f)
     return templates.TemplateResponse("projects.html", {"request": request, "projects": projects})
 
+@app.get("/about", response_class=HTMLResponse)
+async def projects_page(request: Request):
+    with open(BASE_DIR.parent / "projects.json", "r", encoding="utf-8") as f:
+        projects = json.load(f)
+    return templates.TemplateResponse("about.html", {"request": request, "projects": projects})
