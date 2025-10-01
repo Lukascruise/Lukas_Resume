@@ -25,7 +25,9 @@ class Settings(BaseSettings):
             self.EMAIL_HOST = "smtp.gmail.com"
             self.EMAIL_PORT = 587
         else:
-            raise ValueError("지원하지 않는 EMAIL_PROVIDER 입니다 (naver/gmail).")
+            raise ValueError(
+                "지원하지 않는 메일 서비스입니다. (naver/gmail만 사용 가능)"
+            )
 
 
 settings = Settings()

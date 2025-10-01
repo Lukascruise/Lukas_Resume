@@ -1,7 +1,9 @@
+import pathlib
+
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
-from app.routers import home, projects, about, contact
-import pathlib
+
+from app.routers import about, contact, home, projects
 
 app = FastAPI()
 BASE_DIR = pathlib.Path(__file__).resolve().parent
