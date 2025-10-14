@@ -7,7 +7,7 @@ class Settings(BaseSettings):
     EMAIL_USER: str
     EMAIL_PASS: str
 
-    CONTACT_EMAIL: str = "hanyul0417@gmail.com"
+    CONTACT_EMAIL: str = "rmeo4692@gmail.com"
 
     EMAIL_HOST: str = ""
     EMAIL_PORT: int = 587
